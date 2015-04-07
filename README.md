@@ -16,3 +16,4 @@ This is a collection of a Vagrant file, plugin requirements, Puppet manifest and
 
 # Notes
 * Setting up `ssh-agent` on your host machine allows you to use any of the SSH keys on your local machine from within the Vagrant VM without having to map any drives or copy files.
+* A helper script exists to clone this project for use in creating other environments.  The file is located in `scripts/create_dev_environment.sh`.  It takes one argument which is the name of the folder into which you're cloning the project  To create a new clone of this environment for chicagopublicmedia.org, run `scripts/create_dev_environment.sh chicagopublicmedia.org`.  This will create a blank Vagrant setup in a folder named 'chicagopublicmedia.org' inside the current directory.
