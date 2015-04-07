@@ -10,7 +10,8 @@ This is a collection of a Vagrant file, plugin requirements, Puppet manifest and
 1. Configure Vagrant file
   * `client_key` When suffixed with '.local', determines the hostname created for this VM.  For example, setting `client_key` to 'wbez' will assign this VM the hostname 'wbez.local' in your /etc/hosts file. If the `project_base` that you're using requires a database, the `client_key` also becomes the username, password, and name of the initial database.  The `client_key` must be less than 16 characters so it can be used as a database username.
   * `project_base` The kind of app that will be running on this Vagrant.  Current options are:
-    * `drupal`.
+    * (empty): Will only install git and Apache
+    * `drupal`: Installs database, PHP, drush and other Drupal-required packages.
 1. Run `vagrant up`
 
 # Notes
