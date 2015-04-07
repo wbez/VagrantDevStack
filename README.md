@@ -12,5 +12,5 @@ This is a collection of a Vagrant file, plugin requirements, Puppet manifest and
   * `project_base` The kind of app that will be running on this Vagrant.  Current options are "drupal".  To add additional project bases, edit the Puppet manifest in manifests/default.pp
 1. Run `vagrant up`
 
- # Notes
-+ Setting up ssh-agent on your host machine allows you to use any of the SSH keys on your local machine from within the Vagrant VM without having to map any drives or copy files.
+# Notes
+* Setting up ssh-agent on your host machine allows you to use any of the SSH keys on your local machine from within the Vagrant VM without having to map any drives or copy files.
