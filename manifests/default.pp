@@ -70,7 +70,7 @@ class wbez_dev_stack_mysql {
             "$wbez_dev_stack::client_key@localhost/$wbez_dev_stack::client_key.*" => {
                 ensure     => 'present',
                 options    => ['GRANT'],
-                privileges => ['CREATE', 'DROP', 'SELECT', 'INSERT', 'UPDATE', 'DELETE'],
+                privileges => ['CREATE', 'DROP', 'SELECT', 'INSERT', 'UPDATE', 'DELETE', 'ALTER', 'INDEX'],
                 table      => "$wbez_dev_stack::client_key.*",
                 user       => "$wbez_dev_stack::client_key@localhost",
             }
