@@ -103,10 +103,6 @@ class wbez_dev_stack_drupal {
         ensure => "installed"
     }
 
-    package { "drush-make":
-        ensure => "installed"
-    }
-
 }
 
 class wbez_dev_stack_git {
@@ -164,10 +160,6 @@ class wbez_dev_stack_php {
 class wbez_dev_stack_apache {
 
     package { "apache2":
-        ensure => "installed"
-    }
-
-    package { "apache2.2-common":
         ensure => "installed"
     }
 
