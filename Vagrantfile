@@ -1,4 +1,4 @@
-# -*- mode: ruby -*-
+  # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
 #
@@ -59,8 +59,6 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.box = "ubuntu/trusty64"
-  # config.vm.box_url = "http://files.vagrantup.com/precise64.box"
-  # config.vm.box_url = "https://github.com/kraksoft/vagrant-box-ubuntu/releases/download/14.04/ubuntu-14.04-amd64.box"
   config.vm.hostname = "#{client_key}.local"
   config.vm.network :private_network, :auto_network => true
 
